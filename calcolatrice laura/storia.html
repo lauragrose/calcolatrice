@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calcolatrice</title>
+</head>
+
+<body>
+    
+    <h1>La mia calcolatrice in JS</h1>
+
+    <main>
+        <h3>Lo sapevate ?</h3>
+
+        <p>La parola calcolo deriva dal latino « calculus » che significa « pietra ». In effetti, i Romani si sono serviti a 
+            lungo di pietre o di ciottoli per contare, prima di inventare le cifre scritte. La parola inglese « computer », prima di molto 
+            prima di definire ciò che conosciamo oggi, serviva a descrivere qualunque tipo di macchina da calcolo (calcolatrici). 
+            Questo è normale dal momento in cui il verbo latino « computare » significa « contare »!</p>
+
+        <h3>Un poco di storia...</h3>
+
+        <p>
+            Sia che si trattasse di facilitare gli scambi ed il commercio, il calcolo delle imposte o una ricerca scientifica, 
+            gli strumenti di calcolo si sono evoluti in tre fasi. Si dall’antichità, si sono usati strumenti di aiuto al calcolo 
+            che sostituivano oggetti simboli alle cifre. Il più conosciuto è, certamente, l’abaco. Disponendo le biglie che lo compongono, 
+            siamo in grado di risolvere rapidamente addizione e sottrazione, e, con un poco di pratica in più, moltiplicazioni e divisioni. <br>
+
+            Il XVII secolo vide l’invenzione delle prime macchine calcolatrici, puramente meccaniche. La più famosa è stata inventata nel 1642 
+            dal matematico e filosofo francese Blaise Pascal. Queste macchine però erano costose ed ingombranti ed ebbero meno successo dei regoli s
+            correvoli inventati nel 1622 dal matematico inglese William Oughtred. Spostando il cursore ed il regolo centrale di un regolo 
+            calcolatore siamo in grado di risolvere quattro operazioni di base, così come le radici quadrate, calcoli trigonometrici… 
+            Questo strumento risultò talmente potente che la sua meccanica venne riutilizzata per cinque missioni Apollo nel 1960 ! <br>
+            
+            Le calcolatrici elettroniche fecero la loro prima comparsa al cospetto del grande pubblico nel 1970. 
+            Esse costituiscono un passo avanti importantissimo perché sono in grado di risolvere istantaneamente e silenziosamente operazioni molto complesse. 
+            La società americana che creò il primo prototipo fu Texas Instruments nel 1967. Nel 1972, Hewlett Packard vendette il suo primo calcolatore tascabile scientifico, 
+            chiamato HP-35. Questo fu un punto di riferimento per lungo tempo per i calcoli nelle ore lavorative per scienziati e studenti. 
+            Inizialmente furono molto costosi ed ingombranti e pensati per usi professionali o didattici. La produzione di massa e la miniaturizzazione, 
+            però, li misero a disposizione del grande pubblico in pochi anni.</p>
+    </main>
+
+        <div class="content">
+            <input type="text" name="display" id="operazioni" readonly="readonly" class="display">
+        </div>
+   
+
+    <div class="content">
+        <div class="content">
+            <input type="submit" id="sette" value="7" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="otto" value="8" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="nove" value="9" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="/" value="/" onclick="n(this.id)" class="segni">
+        </div>
+        <div class="content">
+            <input type="submit" id="quattro" value="4" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="cinque" value="5" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="sei" value="6" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="*" value="X" onclick="n(this.id)" class="segni">
+        </div>
+        <div class="content">
+            <input type="submit" id="uno" value="1" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="due" value="2" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="tre" value="3" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="-" value="-" onclick="n(this.id)" class="segni">
+        </div>
+        <div class="content">
+            <input type="submit" value="C" onclick="cancella()" class="tasto">
+            <input type="submit" id="zero" value="0" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="." value="." onclick="n(this.value)" class="tasto">
+            <input type="submit" id="+" value="+" onclick="n(this.id)" class="segni">
+        </div>
+        <div class="content">
+            <button value="=" onclick="operazione()" class="uguale segni">=</button>
+        </div>
+    </div>
+
+    <a href="index.html" id="indietro">Torna indietro!</a>
+
+    <div>
+        <p>© 2022 - Laura Gaudencio Rose</p>
+      </div>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

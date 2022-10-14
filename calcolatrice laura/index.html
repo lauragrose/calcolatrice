@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calcolatrice</title>
+</head>
+
+<body>
+    
+    <h1>La mia calcolatrice in JS</h1>
+
+        <div class="content">
+            <input type="text" name="display" id="operazioni" readonly="readonly" class="display">
+        </div>
+   
+
+    <div class="content">
+        <div class="content">
+            <input type="submit" id="sette" value="7" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="otto" value="8" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="nove" value="9" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="/" value="/" onclick="n(this.id)" class="segni">
+        </div>
+        <div class="content">
+            <input type="submit" id="quattro" value="4" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="cinque" value="5" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="sei" value="6" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="*" value="X" onclick="n(this.id)" class="segni">
+        </div>
+        <div class="content">
+            <input type="submit" id="uno" value="1" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="due" value="2" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="tre" value="3" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="-" value="-" onclick="n(this.id)" class="segni">
+        </div>
+        <div class="content">
+            <input type="submit" value="C" onclick="cancella()" class="tasto">
+            <input type="submit" id="zero" value="0" onclick="n(this.value)" class="tasto">
+            <input type="submit" id="." value="." onclick="n(this.value)" class="tasto">
+            <input type="submit" id="+" value="+" onclick="n(this.id)" class="segni">
+        </div>
+        <div class="content">
+            <button value="=" onclick="operazione()" class="uguale segni">=</button>
+        </div>
+    </div>
+
+    <a href="storia.html" id="storia">La storia!</a>
+
+    <div>
+        <p>© 2022 - Laura Gaudencio Rose </p>
+      </div>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
